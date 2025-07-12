@@ -1,2 +1,2 @@
 print ("Hello world")
-print("Fehler
+print("Fehler gefixt")
