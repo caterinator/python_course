@@ -13,7 +13,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                ecbo "Built"
+                echo "Built"
                 '''
             }
         }
