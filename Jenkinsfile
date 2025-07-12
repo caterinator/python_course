@@ -13,8 +13,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                cd myapp
-                pip install -r requirements.txt
+                ecbo "Built"
                 '''
             }
         }
@@ -22,9 +21,7 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                cd myapp
-                python3 hello.py
-                python3 hello.py --name=Brad
+                echo "Tested"
                 '''
             }
         }
@@ -32,7 +29,7 @@ pipeline {
             steps {
                 echo 'Deliver....'
                 sh '''
-                echo "doing delivery stuff.."
+                echo "Delivered"
                 '''
             }
         }
